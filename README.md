@@ -5,16 +5,52 @@ Project 1 for ANSC 6040 class.
 Using the farm's historical parlor data to assign the most likely cow ID to the records with missing IDs, based on individual cow parlor performance. 
 
 ## Naming convention: 
-Variable naming will be capitalized with no space. Prepositions will not be capicalized. 
+The first letter of each word in the variable name will be capitalized with no space between words.  
 
 ## Project plan:
-- Timeline: 
-    Week 4 (9/14): setting up repository, import appropriate packages and load data, explore data structure and missing data
+- Timeline:
+  
+    *Week 4 (9/14)*: setting up repository, import appropriate packages and load data, explore data structure and missing data
     
-    Week 5 (9/21): apply machine learning for problem solving. Specifically - unsupervised learning will be used first for classification.
+    *Week 5 (9/21)*: apply machine learning for problem solving. Specifically predicting cow IDs.
+
+    - Splitting dataset:
+ 
+          - Test set: rows without cow ID
+          - Training set: 70% of rows with cow ID (randomly selected)
+          - Validation set: 30% of rows with cow ID (randomly selected)
+   
+    - Model training:
+      
+          - Supervised learning to predict cow IDs
+
+    - Model testing
+ 
+    - Model performance (e.g., accuracy)
+ 
+    - **Outcome**: generating a model that would predict cow ID based on all variables presented and complete the cow ID column of the dataset.
     
-    Week 6 (9/28): apply machine learning for problem solving. Specifically - supervised learning for model training.
+    *Week 6 (9/28)*: apply machine learning for problem solving. Specifically for days in milk (DIM), reproductive status (RPRO), and lactation number (LACT).
+  
+    *For each outcome variable:*
+  
+    - Splitting dataset:
+ 
+          - Test set: rows without DIM/RPRO/LACT
+          - Training set: 70% of rows wihtout missing data (randomly selected)
+          - Validation set: 30% of rows wihtout missing data (randomly selected)
+   
+    - Model training:
+      
+          - Unsupervised learning to cluster cows
+      
+    - Model testing
+ 
+    - Model performance (e.g., accuracy)
+ 
+    - **Outcome**: If rows from cows with the same ID are clustered, will the model be able to fill-in-the-gap for DIM/RPRO/LACT? 
     
-    Week 7 (10/5): project summary, troubleshooting, preparation for poster presenetation.
+    *Week 7 (10/5)*: project summary, troubleshooting, preparation for poster presenetation.
+  
 - Methods:
     VS code will be used. Changes will be made locally then pushed to the cloud. 
