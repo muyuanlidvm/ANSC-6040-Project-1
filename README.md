@@ -23,12 +23,14 @@ The first letter of each word in the variable name will be capitalized with no s
     - Splitting dataset:
  
           - Test set: rows without cow ID
-          - Training set: 70% of rows with cow ID (randomly selected)
-          - Validation set: 30% of rows with cow ID (randomly selected)
+          - Training set: 80% of rows with cow ID (randomly selected)
+          - Validation set: 20% of rows with cow ID (randomly selected)
    
     - Model training:
       
           - Supervised learning to predict cow IDs
+      
+            - K-Nearest Neighbors
 
     - Model testing
  
@@ -45,16 +47,18 @@ The first letter of each word in the variable name will be capitalized with no s
     - Splitting dataset:
  
           - Test set: rows without DIM/RPRO/LACT
-          - Training set: 70% of rows wihtout missing data (randomly selected)
-          - Validation set: 30% of rows wihtout missing data (randomly selected)
+          - Training set: 80% of rows wihtout missing data (stratified sampling on reproduction status)
+          - Validation set: 20% of rows wihtout missing data (stratified sampling on reproduction status)
    
     - Model training:
       
-          - Unsupervised learning to cluster cows
+          - Supervised learning with K-Nearest Neighbors
       
     - Model testing
  
-    - Model performance (e.g., accuracy)
+    - Model performance
+      
+          - Accuracy
  
     - **Outcome**: If rows from cows with the same ID are clustered, will the model be able to fill-in-the-gap for DIM/RPRO/LACT? 
     
