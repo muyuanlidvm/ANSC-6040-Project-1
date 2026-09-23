@@ -14,6 +14,12 @@ The first letter of each word in the variable name will be capitalized with no s
     
     *Week 5 (9/21)*: apply machine learning for problem solving. Specifically predicting cow IDs.
 
+    - Data Cleaning:
+ 
+          - Remove duplicate rows
+          - Perform z-standardization on applicable variables (AvgMilkFlow, Flow30_60Session, YieldSession) to remove outliers (> 2 SDs)
+          - Drop all rows where features contain missing values
+    
     - Splitting dataset:
  
           - Test set: rows without cow ID
@@ -26,7 +32,9 @@ The first letter of each word in the variable name will be capitalized with no s
 
     - Model testing
  
-    - Model performance (e.g., accuracy)
+    - Model performance
+      
+          - Accuracy
  
     - **Outcome**: generating a model that would predict cow ID based on all variables presented and complete the cow ID column of the dataset.
     
