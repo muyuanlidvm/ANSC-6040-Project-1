@@ -219,6 +219,9 @@ __marimo__/
 
 # ignore the priginal dataset
 Data_set_prep_assignment_1.csv
+df_clean.csv
+df_nocowid.csv
+
 
 # Also ignore the Data Profiles
 proj1_data_profile.html
