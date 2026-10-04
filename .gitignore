@@ -226,3 +226,6 @@ df_nocowid.csv
 # Also ignore the Data Profiles
 proj1_data_profile.html
 proj1_data_profile_cleaned.html
+
+# Ignore graph output
+ConfusionMatrix.png
