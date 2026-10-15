@@ -224,7 +224,7 @@ df_nocowid.csv
 PracticeTest.csv
 predicted_cow_ids.csv
 PracticeTest_ML.csv
-
+*.csv
 
 # Also ignore the Data Profiles
 proj1_data_profile.html
@@ -233,4 +233,5 @@ proj1_data_profile_cleaned.html
 # Ignore output
 ConfusionMatrix.png
 Project1FinalModel_ML.pkl
+Feature_list.pkl
 *.pkl
