@@ -217,11 +217,12 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# ignore the priginal dataset
+# ignore the original dataset
 Data_set_prep_assignment_1.csv
 df_clean.csv
 df_nocowid.csv
 PracticeTest.csv
+predicted_cow_ids.csv
 
 
 # Also ignore the Data Profiles
@@ -230,3 +231,5 @@ proj1_data_profile_cleaned.html
 
 # Ignore output
 ConfusionMatrix.png
+Project1FinalModel_ML.pkl
+*.pkl
