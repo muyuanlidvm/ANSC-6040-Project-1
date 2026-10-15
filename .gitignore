@@ -223,6 +223,7 @@ df_clean.csv
 df_nocowid.csv
 PracticeTest.csv
 predicted_cow_ids.csv
+PracticeTest_ML.csv
 
 
 # Also ignore the Data Profiles
