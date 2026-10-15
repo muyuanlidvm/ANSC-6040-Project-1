@@ -52,7 +52,7 @@ The first letter of each word in the variable name will be capitalized with no s
    
     - Model training:
       
-          - Supervised learning with K-Nearest Neighbors
+          - Supervised learning with Random Forest
       
     - Model testing
  
@@ -66,3 +66,10 @@ The first letter of each word in the variable name will be capitalized with no s
   
 - Methods:
     VS code will be used. Changes will be made locally then pushed to the cloud. 
+
+# Project Summary
+A Random Forest model was trained based on a subset of 448 cows, and the model's top-1 accuracy was 3.6%. 
+
+The same model was applied to the real-world data with missing cow IDs, and the resulted accuracy was 0% (0 out of 1.7M records were predicted correctly). This model is thus completely unsuitable for predicting cow IDs for this farm, and it is farm from being industry ready. 
+
+Pitfalls of this model are many. It was limited and only trained on a subset of cows, which was not representative of the whole herd. The Random Forest algorithm does not suit the purpose of this project well, as there were over 9000 different cows to predict upon. Event date also can provide critical information on model training, but it was not included as one of the features so the model was much less informed. Other algorithms should be considered for predicting cow IDs. 
